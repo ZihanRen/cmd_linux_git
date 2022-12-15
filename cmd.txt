@@ -1,0 +1,11 @@
+// for show your git commit history in a very nice format
+git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%an%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)- %s%C(reset)' --all
+
+// git merge and rebase help you better incorporate main branch feature into your own branch.
+// merge when you want to put your changes happened in your branch into main branch
+git merge origin/main your-branch
+
+// rebase there are changes in an upstream branch
+git rebase origin/main your-branch
+
+
