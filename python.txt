@@ -1,0 +1,30 @@
+
+
+// save some efforts for for loop - similar to zip
+from itertools import product
+
+list_a = [1, 2020, 70]
+list_b = [2, 4, 7, 2000]
+list_c = [3, 70, 7]
+
+for a, b, c in product(list_a, list_b, list_c):
+    if a + b + c == 2077:
+        print(a, b, c)
+
+
+
+// if else statement
+min = a if a < b else b
+
+// get used to lambda for more concise code writing
+fib = lambda x: x if x <= 1 else fib(x - 1) + fib(x - 2)
+
+// merge dictionary
+cities_us = {'New York City': 'US', 'Los Angeles': 'US'}
+cities_uk = {'London': 'UK', 'Birmingham': 'UK'}
+
+cities = cities_us|cities_uk
+print(cities)
+# {'New York City': 'US', 'Los Angeles': 'US', 'London': 'UK', 'Birmingham': 'UK'}
+
+//
