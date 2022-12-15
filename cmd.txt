@@ -9,3 +9,33 @@ git merge origin/main your-branch
 git rebase origin/main your-branch
 
 
+source ~/.bash_profile
+For modify Path Variable, execute: cat ~/.bash_profile
+startup command: sh -c "rclone --vfs-cache-mode writes mount \"onedrive\": ~/OneDrive"
+for f in df2*.png ; do xdg-open "$f" ; done   explain: this command is for iteratively open file with certain character
+
+rclone --vfs-cache-mode writes mount onedrive: /akshat/s0/zur74/OneDrive &
+
+# upload files to google drive
+./gbk.sh
+# list files from google drive
+rclone ls GoogleDrive:/LinuxDocs
+# execute command gbk.sh
+chmod +x gbk.sh
+# configure command gbk.sh
+https://www.howtogeek.com/451262/how-to-use-rclone-to-back-up-to-google-drive-on-linux/
+
+# run python script on background. -u means see the output file in output file
+nohup python3 -u test.py &
+tail -f nohup.out # see the output
+ps ax | grep test.py # find the running programs backend
+kill -9 4360 # kill the process with a reference number
+
+# examine storage
+du -sh ~  # check all used storage
+du -a ~ | sort -n -r | head -n 10 # find top 10 consumed space directories
+quota -s # human readable space storage display
+
+# modify pip cache directory 
+pip cache dir --cache-dir pkgs/
+
